@@ -6,13 +6,16 @@ const Topbar = () => {
   return (
     <div className="topbar">
       <div className="topbarWrapper">
-        <div className="top-right">
+        <div className="top-left">
           <span className="logo">
             <pre>lamaData</pre>
           </span>
         </div>
-        <div className="top-left">
-          <NotificationsNone />
+        <div className="top-right">
+          <div className="topBarIconContainer">
+            <NotificationsNone />
+            <span className="topIconBadge">2</span>
+          </div>
         </div>
       </div>
     </div>
