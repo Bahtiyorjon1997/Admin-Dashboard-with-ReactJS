@@ -1,9 +1,11 @@
-import "./App.css";
+import Topbar from "./components/topbar/Topbar";
 
 function App() {
   return (
     <>
-      <div className="app">Hello React App </div>
+      <div className="app">
+        <Topbar />
+      </div>
     </>
   );
 }
