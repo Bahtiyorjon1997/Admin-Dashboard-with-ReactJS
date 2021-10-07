@@ -5,6 +5,8 @@ function App() {
     <>
       <div className="app">
         <Topbar />
+        {/* sidebar */}
+        {/* main body */}
       </div>
     </>
   );
