@@ -3,12 +3,17 @@ import "./Topbar.css";
 import { NotificationsNone } from "@material-ui/icons";
 import LanguageIcon from "@material-ui/icons/Language";
 import SettingsIcon from "@material-ui/icons/Settings";
+import MenuIcon from "@material-ui/icons/Menu";
 
 const Topbar = () => {
   return (
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="top-left">
+          <div className="topBarIconContainer">
+            <MenuIcon />
+          </div>
+
           <span className="logo">lamaData</span>
         </div>
         <div className="top-right">

@@ -1,3 +1,4 @@
+import SideBar from "./components/SideBar/SideBar";
 import Topbar from "./components/topbar/Topbar";
 
 function App() {
@@ -5,6 +6,7 @@ function App() {
     <>
       <div className="app">
         <Topbar />
+        <SideBar />
         {/* sidebar */}
         {/* main body */}
       </div>

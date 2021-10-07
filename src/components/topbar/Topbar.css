@@ -17,7 +17,7 @@
 .topbarWrapper {
   height: 100%;
   padding: 0 20px;
-  margin: 0 3%;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -32,11 +32,15 @@
 
 .topBarIconContainer {
   position: relative;
-  padding: 0.5rem 0.62rem;
+  width: 40px;
+  height: 40px;
   transition: 0.6s;
   border-radius: 50%;
   background: #f1ebeb;
   color: #555;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .topBarIconContainer:hover {
@@ -77,4 +81,10 @@
   border: 0.2px solid rgb(189, 187, 187);
   cursor: pointer;
   transition: 0.6s;
+}
+
+.top-left {
+  width: 180px;
+  display: flex;
+  justify-content: space-between;
 }
