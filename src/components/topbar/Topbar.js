@@ -14,7 +14,7 @@ const Topbar = () => {
             <MenuIcon />
           </div>
 
-          <span className="logo">lamaData</span>
+          <span className="logo">DataTech</span>
         </div>
         <div className="top-right">
           <div className="topBarIconContainer">
