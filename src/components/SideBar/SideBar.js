@@ -1,13 +1,21 @@
 import React from "react";
 import "./SideBar.css";
+import { LineStyle } from "@material-ui/icons";
 
 const SideBar = () => {
   return (
     <div className="sidebar">
-      <h1>SideBar</h1>
-      <h1>SideBar</h1>
-      <h1>SideBar</h1>
-      <h1>SideBar</h1>
+      <div className="sidebarWrapper">
+        <div className="sidebarMenu">
+          <h3>Dashboard</h3>
+          <ul className="sidebarList">
+            <li className="sidebarListItem">
+              <LineStyle />
+              Home
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   );
 };
