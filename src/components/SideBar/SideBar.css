@@ -15,4 +15,14 @@
   align-items: center;
   justify-content: space-between;
   opacity: 0.8;
+  border-bottom: 1px solid rgb(172, 171, 171);
+}
+
+.sidebarListItem > .listWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.sidebarListItem > span {
+  padding-left: 5px;
 }

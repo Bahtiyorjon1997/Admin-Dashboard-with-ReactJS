@@ -16,23 +16,35 @@ const SideBar = () => {
           <h3>Dashboard</h3>
           <ul className="sidebarList">
             <li className="sidebarListItem">
-              <LineStyle />
-              Home
+              <div className="listWrapper">
+                <LineStyle />
+                <span className="title">Home</span>
+              </div>
+
               <ArrowRightSharp />
             </li>
             <li className="sidebarListItem">
-              <Timeline />
-              Analytics
+              <div className="listWrapper">
+                <Timeline />
+                <span className="title">Analytics</span>
+              </div>
+
               <ArrowRightSharp />
             </li>
             <li className="sidebarListItem">
-              <TrendingUp />
-              Sales
+              <div className="listWrapper">
+                <TrendingUp />
+                <span className="title">Sales</span>
+              </div>
+
               <ArrowRightSharp />
             </li>
             <li className="sidebarListItem">
-              <People />
-              Customer Service
+              <div className="listWrapper">
+                <People />
+                <span className="title">Customer Service</span>
+              </div>
+
               <ArrowRightSharp />
             </li>
           </ul>
