@@ -6,23 +6,45 @@
   top: 55px;
   height: auto;
   max-height: calc(100vh - 55px);
-  scroll-behavior: smooth;
+  color: rgb(58, 57, 57);
+  font-weight: 630;
+  font-size: 1.1rem;
+}
+
+.logoWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 10% 0;
+  border-bottom: 1px solid rgb(172, 171, 171);
+}
+.logo1 {
+  width: 70%;
+  align-self: center;
 }
 
 .sidebarListItem {
-  padding: 5px 1.5rem;
+  padding: 7px 1rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   opacity: 0.8;
-  border-bottom: 1px solid rgb(172, 171, 171);
+  /* border-bottom: 1px solid rgb(172, 171, 171); */
+  cursor: pointer;
+  transition: 0.6s;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.sidebarListItem:hover {
+  transform: translate(10px, 0);
+  transition: 0.6s;
+  background-color: rgb(78, 78, 78);
+  color: white;
 }
 
 .sidebarListItem > .listWrapper {
   display: flex;
   align-items: center;
-}
-
-.sidebarListItem > span {
-  padding-left: 5px;
 }

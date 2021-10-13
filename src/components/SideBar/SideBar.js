@@ -1,5 +1,6 @@
 import React from "react";
 import "./SideBar.css";
+import logo from "./logo.png";
 import {
   LineStyle,
   Timeline,
@@ -13,7 +14,10 @@ const SideBar = () => {
     <div className="sidebar">
       <div className="sidebarWrapper">
         <div className="sidebarMenu">
-          <h3>Dashboard</h3>
+          <span className="logoWrapper">
+            <img src={logo} alt="logo" className="logo1" />
+          </span>
+
           <ul className="sidebarList">
             <li className="sidebarListItem">
               <div className="listWrapper">
