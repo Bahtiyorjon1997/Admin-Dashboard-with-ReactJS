@@ -1,6 +1,6 @@
 import React from "react";
 import "./SideBar.css";
-import { LineStyle } from "@material-ui/icons";
+import { LineStyle, Timeline, People, TrendingUp } from "@material-ui/icons";
 
 const SideBar = () => {
   return (
@@ -12,6 +12,18 @@ const SideBar = () => {
             <li className="sidebarListItem">
               <LineStyle />
               Home
+            </li>
+            <li className="sidebarListItem">
+              <Timeline />
+              Analytics
+            </li>
+            <li className="sidebarListItem">
+              <TrendingUp />
+              Sales
+            </li>
+            <li className="sidebarListItem">
+              <People />
+              Customer Service
             </li>
           </ul>
         </div>
