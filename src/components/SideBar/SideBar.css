@@ -8,3 +8,11 @@
   max-height: calc(100vh - 55px);
   scroll-behavior: smooth;
 }
+
+.sidebarListItem {
+  padding: 5px 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.8;
+}
