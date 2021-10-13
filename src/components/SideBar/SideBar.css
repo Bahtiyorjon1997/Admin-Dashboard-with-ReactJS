@@ -9,6 +9,7 @@
   color: rgb(58, 57, 57);
   font-weight: 630;
   font-size: 1.1rem;
+  overflow-y: scroll;
 }
 
 .logoWrapper {
@@ -18,8 +19,15 @@
   align-items: center;
   justify-content: center;
   padding: 10% 0;
-  border-bottom: 1px solid rgb(172, 171, 171);
+
+  transition: 0.6s;
 }
+
+.logoWrapper:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
 .logo1 {
   width: 70%;
   align-self: center;

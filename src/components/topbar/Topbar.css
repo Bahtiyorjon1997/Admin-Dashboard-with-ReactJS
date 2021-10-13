@@ -17,22 +17,26 @@
 .topbarWrapper {
   height: 100%;
   padding: 0 20px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
-  font-weight: bold;
+  font-weight: 550;
   font-size: 30px;
   color: blue;
   cursor: pointer;
+  border: 2px solid rgb(37, 20, 49);
+  margin-left: 10px;
+  padding: 0 2px;
+  border-radius: 5px;
 }
 
 .topBarIconContainer {
   position: relative;
-  width: 40px;
+  width: auto;
+  min-width: 40px;
   height: 40px;
   transition: 0.6s;
   border-radius: 50%;
