@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Topbar.css";
 import { NotificationsNone } from "@material-ui/icons";
 import LanguageIcon from "@material-ui/icons/Language";
@@ -6,15 +6,16 @@ import SettingsIcon from "@material-ui/icons/Settings";
 import MenuIcon from "@material-ui/icons/Menu";
 
 const Topbar = () => {
+  //   const [toggle, setToggle] = useState(true);
   return (
     <div className="topbar">
       <div className="topbarWrapper">
         <div className="top-left">
           <div className="topBarIconContainer">
-            <MenuIcon />
+            <MenuIcon></MenuIcon>
           </div>
 
-          <span className="logo">DataTech>></span>
+          <span className="logo">DataTech</span>
         </div>
         <div className="top-right">
           <div className="topBarIconContainer">

@@ -1,11 +1,16 @@
 import React from "react";
+import ArrowRightSharp from "@material-ui/icons/ArrowRightSharp";
 
 const SideBarItem = ({ id, icon, title, children }) => {
   return (
-    <div className="sidebarItem" id={id}>
-      {title}
-    </div>
+    <li className="sidebarListItem" id={id}>
+      <div className="listWrapper">
+        {icon}
+        <span className="title">{title}</span>
+      </div>
+      <ArrowRightSharp />
+    </li>
   );
 };
 
-export default SidebarItem;
+export default SideBarItem;
