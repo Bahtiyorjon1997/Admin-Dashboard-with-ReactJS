@@ -4,8 +4,8 @@
   box-shadow: -4px -4px 16px #d5d5d5, 4px 4px 16px #d5d5d5;
   position: sticky;
   top: 55px;
-  height: auto;
-  max-height: calc(100vh - 55px);
+
+  height: calc(100vh - 55px);
   color: white;
   font-weight: 630;
   font-size: 1.3rem;
@@ -47,6 +47,7 @@
   border-radius: 5px;
   list-style: none !important;
   color: white;
+  text-decoration: none;
 }
 .sidebarListItem:hover {
   transform: translate(10px, 0);
