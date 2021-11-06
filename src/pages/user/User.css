@@ -107,7 +107,50 @@
   margin-right: 20px;
 }
 
+.user-update-item {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.user-update-item > label {
+  margin-bottom: 5px;
+  font-style: 14px;
+}
+
+.user-update-input {
+  border: none;
+  width: 250px;
+  border-bottom: 1px solid gray;
+  height: 30px;
+}
+
 .user-update-title {
-  font-style: 24px;
+  font-size: 24px !important;
   font-weight: 600;
+}
+
+.user-update-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-update-upload {
+  display: flex;
+  align-items: center;
+}
+
+.user-update-icon {
+  cursor: pointer;
+}
+
+.user-update-btn {
+  border-radius: 5px;
+  border: none;
+  padding: 5px;
+  background-color: darkblue;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
 }

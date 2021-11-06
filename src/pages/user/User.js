@@ -8,13 +8,16 @@ import {
 } from "@material-ui/icons";
 import React from "react";
 import "./User.css";
+import { Link } from "react-router-dom";
 
 const User = () => {
   return (
     <div className="user">
       <div className="user-title-container">
         <h1 className="user-title">Edit User</h1>
-        <button className="user-add-button">Create</button>
+        <Link to="/newUser">
+          <button className="user-add-button">Create</button>
+        </Link>
       </div>
       <div className="user-container">
         <div className="user-show">
@@ -125,10 +128,11 @@ const User = () => {
                   className="user-update-img"
                 />
                 <label htmlFor="file">
-                  <Publish />
+                  <Publish className="user-update-icon" />
                 </label>
-                <input type="file" id="file" />
+                <input type="file" id="file" style={{ display: "none" }} />
               </div>
+              <button className="user-update-btn">Update</button>
             </div>
           </form>
         </div>
