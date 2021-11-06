@@ -1,18 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SideBar.css";
-import logo from "./logo.png";
-import data from "../SideBarItem/SideBarItem";
+import logo from "./logo.svg";
 // import toggle from "../topbar/Topbar";
 import {
   LineStyle,
   Timeline,
   People,
   TrendingUp,
-  ArrowRightSharp,
+  Person,
+  LocalMall,
+  MonetizationOn,
+  AccountBalanceWallet,
+  Report,
+  Email,
+  MarkunreadMailbox,
+  Forum,
+  ControlCamera,
 } from "@material-ui/icons";
-import SidebarItem from "../SideBarItem/SideBarItem";
 
-const SideBar = () => {
+const SideBar = (toggle) => {
   //   const [toggle, setToggle] = useState(toggle);
   return (
     <div className="sidebar">
@@ -23,207 +29,90 @@ const SideBar = () => {
           </span>
 
           <ul className="sidebarList">
-            {data.map((item) => {
-              <SidebarItem
-                icon={item.icon}
-                title={item.title}
-                id={item.id}
-                children={item.children}
-              />;
-            })}
-
-            {/* <li className="sidebarListItem">
-              <div className="listWrapper">
-                <LineStyle />
-                <span className="title">Home</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li> */}
-            {/* <li className="sidebarListItem">
-              <div className="listWrapper">
-                <Timeline />
-                <span className="title">Analytics</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <TrendingUp />
-                <span className="title">Sales</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <People />
-                <span className="title">Customer Service</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
             <li className="sidebarListItem">
               <div className="listWrapper">
                 <LineStyle />
                 <span className="title">Home</span>
               </div>
-
-              <ArrowRightSharp />
             </li>
             <li className="sidebarListItem">
               <div className="listWrapper">
                 <Timeline />
                 <span className="title">Analytics</span>
               </div>
-
-              <ArrowRightSharp />
             </li>
             <li className="sidebarListItem">
               <div className="listWrapper">
                 <TrendingUp />
                 <span className="title">Sales</span>
               </div>
-
-              <ArrowRightSharp />
             </li>
             <li className="sidebarListItem">
               <div className="listWrapper">
                 <People />
                 <span className="title">Customer Service</span>
               </div>
-
-              <ArrowRightSharp />
             </li>
             <li className="sidebarListItem">
               <div className="listWrapper">
-                <LineStyle />
-                <span className="title">Home</span>
+                <Person />
+                <span className="title">Users</span>
               </div>
-
-              <ArrowRightSharp />
+            </li>
+            <li className="sidebarListItem">
+              <div className="listWrapper">
+                <LocalMall />
+                <span className="title">Products</span>
+              </div>
+            </li>
+            <li className="sidebarListItem">
+              <div className="listWrapper">
+                <MonetizationOn />
+                <span className="title">Sales</span>
+              </div>
+            </li>
+            <li className="sidebarListItem">
+              <div className="listWrapper">
+                <AccountBalanceWallet />
+                <span className="title">Transactions</span>
+              </div>
+            </li>
+            <li className="sidebarListItem">
+              <div className="listWrapper">
+                <Report />
+                <span className="title">Reports</span>
+              </div>
+            </li>
+            <li className="sidebarListItem">
+              <div className="listWrapper">
+                <Email />
+                <span className="title">Mail</span>
+              </div>
+            </li>
+            <li className="sidebarListItem">
+              <div className="listWrapper">
+                <MarkunreadMailbox />
+                <span className="title">Feedbacks</span>
+              </div>
+            </li>
+            <li className="sidebarListItem">
+              <div className="listWrapper">
+                <Forum />
+                <span className="title">Messages</span>
+              </div>
+            </li>
+            <li className="sidebarListItem">
+              <div className="listWrapper">
+                <ControlCamera />
+                <span className="title">Manage</span>
+              </div>
             </li>
             <li className="sidebarListItem">
               <div className="listWrapper">
                 <Timeline />
                 <span className="title">Analytics</span>
               </div>
-
-              <ArrowRightSharp />
             </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <TrendingUp />
-                <span className="title">Sales</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <People />
-                <span className="title">Customer Service</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <LineStyle />
-                <span className="title">Home</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <Timeline />
-                <span className="title">Analytics</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <TrendingUp />
-                <span className="title">Sales</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <People />
-                <span className="title">Customer Service</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <LineStyle />
-                <span className="title">Home</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <Timeline />
-                <span className="title">Analytics</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <TrendingUp />
-                <span className="title">Sales</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <People />
-                <span className="title">Customer Service</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <LineStyle />
-                <span className="title">Home</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <Timeline />
-                <span className="title">Analytics</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <TrendingUp />
-                <span className="title">Sales</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li>
-            <li className="sidebarListItem">
-              <div className="listWrapper">
-                <People />
-                <span className="title">Customer Service</span>
-              </div>
-
-              <ArrowRightSharp />
-            </li> */}
           </ul>
         </div>
       </div>

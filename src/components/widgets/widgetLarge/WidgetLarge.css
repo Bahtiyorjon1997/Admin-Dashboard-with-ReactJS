@@ -1,0 +1,48 @@
+.widget-large {
+  flex: 2;
+  padding: 20px;
+  margin: 0 0 0 20px;
+  border: 2px solid rgba(187, 184, 184, 0.5);
+  border-radius: 10px;
+}
+
+.widget-large-title {
+  font-size: 22px;
+}
+
+.widget-large-table {
+  width: 100%;
+  border-spacing: 20px;
+}
+
+.widget-large-table-th {
+  text-align: left;
+}
+
+.widet-large-table-td {
+  display: flex;
+  align-items: center;
+}
+
+.widget-large-table-name {
+  padding-left: 10px;
+}
+
+.widget-large-table-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* .widget-large-table-status {
+  text-align: center;
+} */
+
+.widget-large-table-status > button {
+  border: none;
+  border-radius: 7px;
+  padding: 5px 10px;
+  font-weight: 700;
+  color: rgba(137, 43, 226, 0.726);
+}

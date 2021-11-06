@@ -1,0 +1,11 @@
+.chart-container {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid rgba(187, 184, 184, 0.5);
+  border-radius: 10px;
+  background: rgb(213, 203, 251);
+}
+
+.chart-title {
+  padding-bottom: 25px;
+}
