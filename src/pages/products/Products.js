@@ -1,6 +1,8 @@
 import React from "react";
 import "./Products.css";
 
-export const Products = () => {
+const Products = () => {
   return <div className="products">Products</div>;
 };
+
+export default Products;
