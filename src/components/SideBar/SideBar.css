@@ -5,7 +5,7 @@
   position: sticky;
   top: 55px;
   height: auto;
-  min-height: calc(100vh - 55px);
+  max-height: calc(100vh - 55px);
   color: white;
   font-weight: 630;
   font-size: 1.3rem;
@@ -45,6 +45,8 @@
   overflow: hidden;
   margin-right: 10px;
   border-radius: 5px;
+  list-style: none;
+  color: white;
 }
 .sidebarListItem:hover {
   transform: translate(10px, 0);

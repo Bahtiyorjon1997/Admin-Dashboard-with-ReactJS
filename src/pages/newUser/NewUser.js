@@ -39,6 +39,14 @@ const NewUser = () => {
             <label for="female">female</label>
           </div>
         </div>
+        <div className="newUser-item">
+          <label for="">Active</label>
+          <select name="active" id="active" className="newUser-select">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </div>
+        <button className="newUser-button">Create</button>
       </form>
     </div>
   );
